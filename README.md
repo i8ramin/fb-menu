@@ -18,4 +18,9 @@ I have inline most of the images using data-uri's so that I could work on this o
 ## Demo
 
 You can watch a quick Youtube video I put together of how this works in the iOS simulator.
+
 http://www.youtube.com/watch?v=uCFY0DF2UZo
+
+You may also load this URL directly on your iPod/iPhone device or simulator:
+
+http://i8ramin.github.com/fb-menu/
