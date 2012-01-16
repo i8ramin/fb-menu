@@ -15,6 +15,7 @@ The HTML and CSS are a work in progress and in no way production read. My initia
 
 I have inline most of the images using data-uri's so that I could work on this offline. All images/icons used here belong to Facebook and I am simply using them to educational purposes.
 
-## Preview in iOS device
+## Demo
 
-Simply clone/fork this project and load it up in iOS simulator or on your ipod/iphone device if you can figure out how to host it locally on Apache or something. I'm working on putting together a demo page or screencast to show this off. Stay tuned!
+You can watch a quick Youtube video I put together of how this works in the iOS simulator.
+http://www.youtube.com/watch?v=uCFY0DF2UZo
