@@ -1,0 +1,290 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+	<style type="text/css">
+	@import 'fb-menu.css';
+	</style>
+</head>
+<body>
+
+<div id="viewport">
+	
+	<div id="menu">
+		<header>
+			<input id="search" type="text	" placeholder="Search">
+		</header>
+		<div class="scrollable">
+			<ul>
+				<li>
+					<img width="34" height="34" title="" alt="" src="data:image/jpeg;base64,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" />
+					Ramin B.
+				</li>
+			</ul>
+			<div class="separator">Favorites</div>
+			<ul>
+				<li class="active">
+					<img width="34" height="34" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAABgFBMVEX///8AAAAAAAAAAAAAAADFxsgAAAAAAADp6uwAAAAdHR0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADq6uoAAAAAAAAAAAAAAAAAAAAAAAAAAADLzM0AAAAAAADr7O4AAAAAAADi4+XHycvj5OYAAAAAAAB9fn7ExsiIjZYAAAAAAAAAAAAAAAAQEBAAAAAdHR0SEhIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///92fpL09ffm6O7w8fXx8vXv8PXe4efu7/Tg4+iGkKbp6/Hs7vPr7fLx8va1vM7b3uTAxMzh4+rj5uzz9Pfv8PTk5+2pssb3+Pm0vdLd4OaMlq7AyN2stci8wcqmr8a2v9Skp7HEx8/Byd23wNbCyt6zus2ttsmMlKWEjqTl5+2Sm62doqyXnae6w9m3wNTj5evy8/bo6u+qs8e4wdakqLG5wte+xtrt7/TAyNvq7PKyusy0u83j5OuvuMqao7i1vtOmr8W9xtm/x9q0uMJAUWv8AAAAO3RSTlMAAAM4B8VSBb0ogi8EAX0CKyUqNM4OJy0KNy4Qwk8Gu01Rr8SQThlnuM1Bc3x7fkSDf1wjCRggLFYpHNcReP4AAAFLSURBVHjazdNFW8NAEIDhEihFGkoq1HB397jUFXd3d7e/zqbdwg7NgRMP73W+y+48Y/pPCnS0jTJio9Esm9EuxuEt/MnrYFx0LqHsTtaI007hxOqvZ2d4I30WnPibq1n+Mh/P19TiZLSuiU2tfuRJpYqLTNmkqsTMnhr6Skp/l0gcx0lSFJAkkIhcIBARo5uE24gIkjRKxPTDOuFdTINEVWVZVmEiqyAJZWwtEK5vQiAJZ9y/kUJhkASz7oAgSM4MgURA/yIIT4AggCSJHj2V3D4iXOwlQZJAyWNi8YpwfJIAiaJomqacbxBeNAVsOpYxvUKYnYs15BKm0czGdUvPy4TXtXhLLmlta2cPdTu784T9g45OC0489vGu7gqkp7eM0D8wOEThxDY8wlQiY25f+Tefe2LSQ6MEnxpFWXUWkhWdmgknmMkISv7MJ4cCtxHbUZkEAAAAAElFTkSuQmCC" />
+					News Feed
+				</li>
+				<li>
+					<img width="34" height="34" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAE50lEQVR4Xu3Ve0xTVxwH8FVRYcuMcQNNRowzLmaZExOncVnMsuyRbWbGLZuLSFyzMbUqBXmoCMh4yEMpTAFBCE+LKJOuc5aXhfIor5ZCoRYojwIZAgqbLgGEwfzud26gsZuuaC7J/thJPjmc37m/5Hv5Jb3PAPhPsNkwD4vXIHZkOVlDNpItM/uambrdfAcRkOfJRu+dbnEZXqHasojUW8bzsmm2szOrs/uZ5wTzEWQBcdy09lXXfH9Je1uSHAbJZTSFZkIXmAqN33m2c+e8I5Ht9Nxu6nmBCPgOsvyjTW8d0sZdGm1NkKExOA0a38THqjqeMLp13QY36lvKZ5DFz9k7bCsNTxkynv0BmqNJqPdJsCl7r7+Jet8gi/gKstLvM6G0NVEGrf8F1HnHcyrFsVDsPwW5ewiu005nVrfi9f4XGdS/gq8gG/P9Y8z6KClqj5zjqD2/h/p0Jn4z94Otu70D7Mzq7N4i2+2Ymfpd+AryrkaSM64JuIAar7Oc6qALmJ78Aw8vOrM6u7coEUWNUf87fAX5+Gb8VdR4n0M1vTFjylPiUYvq7N6iShz3gPXzFeRDTYx0Qi2Ow6zufBUetVj94eeUougJ1s9XkLcLguOH1V70hh6xnPrAFEyNT1iFoDOrs3uL3L0n7rB+voK4nBEe0Vf7xKPysMRCF5GFu6Y+TI3dZzs7s7qVkx/saaD+1/kKsmLLK+u/qwlIflBxKAZzVSY6/ec6R+dj1O/EV5Al5E3P7bsryw+eRrlobvZueq+I+jbz+YMmIMvJrnT3E/2qA9GwJfaTfWbq+ZQsIwI+vzULyZrNa187U+YZO122PwqPU+QePkUjCaGeVWTBE39r5rDsybbjO7/SsgCl+yIfSbR1u5oatpLFxNayGURA7IkjeWmGM9nw7BJ735/EkaPKbyPwd9lf+t5btNBOTD3rifNDvY7EgQisR287yKLgoIB9faZ6zLpl1mPkdi/U5UU4KT6MUlE0brifsuK3Xwh9Sx4mJzWo77gGdZvc4oDfQW/2ck8aZJk0M7Wxp7Uanc1lnKE+I0YGzWjVlSIlPgJp4kCUfBNuEbdHhLAEH3T3F2J6ugG6bhmKmrJm0V2wkYK8+KRBVtdXKiZZAFNjCcw3KzEy0IXBXgPadcWoKMhBqK8HCj2iUfx1GOTCk/DwcUOWIgbGvmtckM6BAiga0iwuFsVPUZB1RDDXIAsCjh5y7WxRoa2hAK1aBfrNTbjTbwLVuHNzjRyXMySIPCBGMY0kyFWImHR/XFUnouKmlAsyfK8c8rpkK58LdwWx8cw1iENuVqKqXVcIQ+2P6GhS4tfbPVZGhszoam9CVnoSco9HITs9GZ0mHXoHjegZMmBqqoHh/jYPclCsu4hAiV8bG89cgzjV3LgyZqiVQV91BQM9LRgZ7P6H2/0daGmqhurGz2znzsODXegbMGLsvo4bzy/DenQNNHOazVVIkoVbxmMzSFjA4Z2GWjkayy9Bp5L+K40yC7UlGWy3qvf0XueCaE25yFZGWtnhuiOQjcdWEDtZzlkZ+09olBlPrUOfz4LQqBRIKwqx4h0hamfjsRXEobo483dtaSbqilOeWoMqnQsyMV6HvIJIpCiCLCQ5x9h4VtkKYk9ciJD4zgMx2U5W2gqykCwlzuTlebCaOJElNoLw62k/ev8H+QvLfPG1uC2SWQAAAABJRU5ErkJggg==" />
+					Nearby
+				</li>
+			</ul>
+			<div class="separator">Lists</div>
+			<ul>
+				<li>
+					<img width="32" height="32" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABcVBMVEX///8AAAAAAAAAAACYm59FZqBIaqaTlpn///9IaqapuNWjtNKmttOnt9T8/P2ktdOcrs+UqMvl6vKYm5+Mosf4+fuqutWMoceWqcyVqcuWqcuNosefsdCrutaZq82gstGdsM+is9H9/f6drs+Tp8uYq82jtdL5+vv3+Pusu9aOosh1iKybrs7GytLGy9KVqMqcr86QpMnY3+y8yd6ktdKZrMzz9fm2w9ySpsqpudXq7vXV3Op2j7ydr8/n6/OfsNDa4e309vrH0eONo8ezwdrv8vePo8ihstGXqs2ktNKdr86SpsmJnsS7yN2Yq8yPo8eUp8qwvtiqudWarM2xwNmYrM2gsdGOo8iLocewv9mywNrj6PH9/v7Q2eiRpsqmttSbrc7DzuLx8/iEm8Pu8ffd4+6LoMbe5O/t8PaKoMagsdCLocahs9GMo8fS2umQpcnR2ej3+PrV3eqJn8aInsWXqsyZrM6No8nX3uyqutabrc/iLxmdAAAACHRSTlMAABoTvb69vm+AlS0AAAEZSURBVHherdHFcsMwFIbRNE7aKzOGmcrMzMzMzMz49HWbyo1H6qbjM6PdN/dfyOUIj0bwFJmsQCslaE4HhmFU/jDyyAD7f1BTwLEJ018TZIB1IZtiIkDlNoiYQFFejnVzbDQPkRd8ddDxsNSca/d9oQRsunNzC3p607usiTIhcHuKMtQiNo6NC4JgBWUY4i9CtbGZ+gYYCDXxPCWQFFBb215e3+D9Q5IKg+pviAv29YMazA4eDI+MclZwj6HkxOTUdEqdnZuHhcUkJYgvr6yurcNGxp/a3olTgogO++HDo+PwyenZeYQSJC4Brq5vRP32TtQTOCjRMCQHHp8yzxX+QNZ8Mg4YN4aqbHDw+/FeZOMlAsZtw7ic8AnFiFtfuaR63QAAAABJRU5ErkJggg==" />
+					Subscriptions
+					<span class="count">5</span>
+				</li>
+				<li>
+					<img width="32" height="32" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA7VBMVEX///8AAAB9QiIAAAAAAAAAAACYm58AAAB9QiIAAACYm58AAAB9QiJ9QiJ9QiJ9QiJ9QiIAAAAAAACTlpkAAAAAAAB6QCHw8PB9QiJ9QySYm5/4+ftoaGju7u5/SClwcHBkTDKSazmxoZjr6unKtKmkjIFzXUa1o5nIsabt7Oy0o5mxoJd/RiiSlZlsYFnFuLF+RijGr6S4sLGaeGh2YUvLv7jAp5m8oJJ8RCX3+PvJvLX5+vvGy9Lt7vD3+Pq1pJt0X0h1iKzDq5+nkIfHu7SXdmZuXlXGytKzopl3V0W9opRxW0To5uWLcGN3VkS8wib+AAAAF3RSTlMAAAAKHBoAB5MVvQKEioeZPAsBvhMjncIFbEAAAADoSURBVHherc3XTsQwEIVhnADJVjoztlO29kLvvXfe/3EYE2KixAsI5bs5N790ZvJQFBlFRnQgTjJE3oGU8uqLjGQC7f/BacLfLmLTAitmvmi9pYKUHmL5p2AL+UgXhosb5N29AKtWGBovrpFfAFBRMQf7yAfQ78NxgE+h4aKN/BGanZdXuA3wPQ6OtGfkDQB/97IJqnDTwQEeDoH4PpCNTXR18KBs79zdQ8JkfWHxMzjXzjwgNaLWW1q2zEG9HgU2Y/kEK0IbG4PVOW3NGMxHGLE9pUbUxgH75hRmEwpOJig5doJTouBXH/M+XBTwd6n6AAAAAElFTkSuQmCC" />
+					Family
+					<span class="count">20+</span>
+				</li>
+				<li>
+					<img width="32" height="32" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAACKFBMVEX///8AAAAAAACYm5+Ym595SFp5SFp3Rlh3Rlh4R1l5SFp1RVdzRFVyQ1R4R1lwQlNuQVFrP09pPk5nPUxlPEpjOklhOUdeOEVcNkRcNkSTlplaNUIAAABVMj9YNEFYNEFVMj5XM0BVMj4AAABMLThRLzwAAAAAAAAGBAVKKzcbEBQAAAAAAAAAAAAAAAC7boy4aoj4+fu6bIqYm5+4a4j8/Py5aoi6bou7bYu6bYt2R1i2aYf3+Pu7bou6bYr+/v65a4n3+PrGytLDfZmbYniSXHC+epR1iKzJlKiIYnKqaoK6a4m1oKmXXXO8cI3v7O+roquFUWTEfpq5bYqzaobu4ueiaX/48/W2c414SlvSorXy8fVxSVi1aoa0aoa0d4/j0Nf59ffo1929iZyzaYW5bYmLVmq/e5akjJaTV268f5eyZ4SrY3+oYXyqY36xZoO3aoihXnd6SlzCfJe7ucJnP02+dZHBepa0aYa5bIl+TF6dZXqzmqSjjZaQU2q8b42aWXLgws3p5uloQk+zZ4TWrL2olZyJUWaVV268c4/u7e9nRFGjXniIVWi1aIXDfJircYf9/f2Cd359Sl3s3OKGTmOpnaeQXHCznKb5+vuMUWeaWXHEyM/z8/W8cI6/dpKqYX1zRFWvk57c0dfhxM+xl6GaY3nGg52ob4W5fZTKiqO7b4zEhJyeZXu5bIq6boqRWG6VcH7Bg5vKmKyhaX6iY3vGy9KAS18IpKgAAAAAL3RSTlMAABoAvU6c5Buuz7c8hBWxonIkvUjAObT8ML6KE77bDCLzRw+AqxUIKJ83EAMOBZ6ylBcAAAFUSURBVHherc1jcyxBAIXh6WRj27buaO3Ytm3btm07l8bfS2UWs9mebKpSeT8/dQ7yHrFIKBYAgAbkIRT53gDH8XhluCII0L0Z/NPo1YXrq59dpoYGL4HT27qHj5+aNmJNLBkvThKHv3Sfp/X13/8xMmZaGLnLGkepovPMGEB6YT2K8oomZxdRdH3VHL7Y2z9DeTccDmfnM4p+tYAXDmIkkrjNpxK+S5KsYJCSypf+osBvgv/XGr7IyBRk5+TKZLL8gm+CHzZKIKYrLimVlpVXVFZV19RKhbYwEDc0Euzmlta29g6i0w6hQZSqnl42IRcNiNiDxJC9CkRqNjqWrGjCATCCqekZOZXQEQZUc/MUWHBCEGawtLzC5XLXnF3UwJV83tY2hmG7bog6dz2tPI6wY08vGuhrBbx9Li59AQ2Adn7+/wMCdYGg4JDQMF0AhEd8ACrwCDHKycP/8JZ0AAAAAElFTkSuQmCC" />
+					New York Area
+					<span class="count">20+</span>
+				</li>
+				<li>See All Lists</li>
+			</ul>
+			<div class="separator">&nbsp;</div>
+			<ul>
+				<li>Account Settings</li>
+				<li>Privacy Settings</li>
+				<li>Help Center</li>
+				<li>Log Out</li>
+				<li id="copy">
+					<p>English (US) - Desktop Site</p>
+					Facebook &copy; 2012
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="page">
+		<div id="close-mask"></div>
+	  <header>
+	      <div class="trigger"></div>
+				<div class="icons">
+					<span class="friend-request">
+						<img width="30" height="26" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAMAAACXfxyGAAACMVBMVEX///////8yR3E5UIA3Tn80S30tRXc+VYU1TX4xSHovRnkySntDWYk9VIQpQXQ8UoMoQHM6UYIrQnUsRHYsQGs6UYEjOGQ2SnQrP2otQW0wRG88UoL///////8mNFEjLkc0R3IlOWYiN2T///8gMFMyRm8rOVg/VIElMEkiLkg7T3clMUowQWUvQGUlMUo3S3UlMUofK0QwQWklMUo6UH0qN1QvPV0/VoU3Q144RWAyQWQgLEUqNVE5THMpN1NDVXszSHMzRW81SXM4RV93gJI+VYQnM081RGJKWHYhLUYhLUYsOlY6THQrOVUyR3QsPF3///8zR3EzSno2SnRFU3ApOFcmNlUvRG8jLkcoOl8cKEIbJ0EeKkM0R3AlMUoqN1SCjaM+UXkvRHI0R3JUZIgmMkweK0Q9UHpFW4olMEkkMVH///9fbIr///8aJkAaJkAiMVIvRXUjLkcoOmIaJkAaJkAaJkAvPFUkMk8ZJT8ZJT8ZJkEhLUYtQnM/VoYjNVsbKUYZJT87UH4wQ24rQG4uRHYZJT8ZJT8YJUAfMFIrQXE8UoEkOGAbKkhbaYgsQWwrQnIjNVsZJ0MXJD4XJD4XIz4jNl8vRnQnPGgfLktAUnUmO2chM1kaJ0EiMU84Tn00SHEpP28jNFk+S2gpQHEgL1MlNFYlOmgyR3QhNV03RF4kOWUiNl8WIj0iNFglO2snMk4uQ25WZIIbJ0IlN14ySXcUITwhL0z///8rPWf///82PhOPAAAAu3RSTlMAHMa/v7+/v7+/v7+/v7+/v7+/v8a/xsbGxsa/BQTVNsbGxgLQxtLCKdimsMzADsZfDsrZwm7Rvzo6zjaVx26GxMfGOhW/lW9MKct6kVTDkwmxwcVLxqDFG8wbDjbHKVQrhsSmXL1gxsBSrBFECw5txcEOyocpGzluDm3KUsG/zNajwqbEwJUbr9DBwMnIRLHBy9eVDkTKwsWIZcbMbW7AvMKpPcG4h8TEyi7GyA6ewznGQTedwiliFcgMCxzehwAAAVlJREFUeNqlyVNzQ1EUhuHVJCdoUptpm9S2bdu2bdu2bZu/rvucdDrZZyYXnb4365v1wB/Kk012DtbO0TLVotStvMKrUhb7+AoEAnOzDHILhU10tnHvQ9m3A0RGGRpa9tBYK5SD0vIECEvmcIZSaWzlooAKCgawnUYj1xtTRyclMiNXgEA9cnhgLGJoqKAYKQDUYvgBln8Ak8ncPwiBHFMmyjQc5whdFot1ESOCWHKw4uJxTkhM4nIfnwDS0rmo18wsjLM/CYLQyQcoKNQhiKLiEgOMy9T5fP56FYBBNVrqNbXSWFff0MhDNbe0Qps2j6fdIYWdXd3iXnmq/oHBh+ER+VHx2PgvT0xOsX+bmZ2bX2CzF5eWVyS6uqYm3cbm1jZ5d3YlvGesKt3h0TH1ODmV8Nm5Itbl1TV1b24pvrtXxtLU15TcZ4pfTGi9/dx3ij/kaOn/3C/4Z98S9VFhNbsa3QAAAABJRU5ErkJggg==" />
+					</span>
+					<span class="messages">
+						<img width="30" height="26" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAMAAACXfxyGAAABHVBMVEX///82Tn81TH0zSnw7UoE9U4MxSXovR3ksRHclMk47UoI4T38tQW3///86UYAbKkcrQGw+VYQwRXD///8/VoVCWYc0SHP///////8xRnFGXIs4T4AzR3IuRXgqN1M6UYE/VoYnPGk2SXT///83S3U4THb///////8wRG85TnYtQ3VKW4AuQm4+VYVFV3w9U4QqN1MqN1M0SnpDWIb///8qPmspP2tCWYgmO2c0Q2YvQ24oPWodK0glMk4gMlUrQW8vRnUeK0ktPWAtRHNtepksQGwpPWozR3FPYYUqQGzh5Oo+UXmXobYvQ246T34rQ3UpQHA6TXXg4+olMk7N0tskOWYmPGolOmdLXIEjOGUmO2dpd5UqP2qVn7TM0domYKqoAAAAX3RSTlMAv7+/v7+/v7/Vv7/FH7/Vxb/FHr+/xQ8Bxb+/xb/Vv7/FxQ3FxRMEvcbAcMG/cL9k0MDBCL3Fv8XFxcFV0M/DwQPFwUi4xcZlwSOFMKbBv8GHI2QfxcPBZcW4SKYwH9m7N2EAAAD/SURBVHhevc3HcsIwFIbR61rAJgYDNgkp9BpCD5303nt//8cIGkvjqw2LLHIWd0b/txD8j2ZrA2s1+TzsrGKdIZ8riV0sUeFzIb6FxQssPE4Nw4B8dBuL5lk+uFGULGSVHWyxUKdySE5CUg4hZKHSkc1ImlyELFQqvBZOkYuQhYoJghAjFyELNRJFcQTltoi1yyybkiSZ+7W6yZB3vcayraqqPXEdy3dxae+ptuOy3Nc07XC2wnjFs/N5HxjoVdcD1R5A7uj4JMiNcUbX9Yxv3ACA7tV1kF1ncHs3uH+wCP/P0hMgzy+vb0UPEO7x/vGZA4z39d2FJX5KsIwHf/MLdKoq3Wj6tMgAAAAASUVORK5CYII=" />
+					</span>
+					<span class="notifications">
+						<img width="30" height="26" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAMAAACXfxyGAAACjlBMVEX///81TH04T4A5UIE2TX4/VoYpQXQsQ3YqQnX///////88U4MwR3lDWokzSnz///8uQm07UoI9VIT///8+VYUxRW8oPWgjOGQsQGslMUr///8sQGz///8rOVY4T38ySXs9UHr///8qPmkrQG0kOWX////FytYrPF47UoF1f5RwfZpAUnglMUovQ24nPGhMXYJXZH86TnclMUqmrsFAVIAoNVAjL0cyRWwiLkhDWIYyQ2MlMUolMUo1SXNicI4lMUozRWwlMEkuP2I6UH4qOVkgLEVba448Un82S3YrOVYyQmQnNE8jMEkgLEUkMEosPWA6UH8tRXc5SGYfK0Q1SXMfK0QgLEUpN1MuPl44TnsqOVkeKkMxRG1VZYb///9WZ4oeKkMlMk0oN1klNFM1SncuRngsPGA0QFozRm8jL0kyQF0sOlc3SnM2THs5UIBygZ4gLEYlMUo1S3smNlg2RWREVn1DVHkwRG86R2ElMEklMEkzSHckNFYoOV4vPmA3SnMwRXIxR3Q5RWAlMEkjL0coOWA6SnA8TncrPF9od5Y4S3UuQm9fb5E0SHJBWIUmN1wmN10hLUaJlKw8TnYyRnAvRXU1SHEmNlZ0fpNAU3uIkqZSYoVLXIAhLUZBUXQyRGs/Unqco7L///8mM043S3M7R2EtPmEpP2weLUobKURIWn+vtcMsP2snPGo8U4IjNV8XIz4XIz4iNFwvQm56hp8rPmolOWYfK0QoP3AcLE4WIj0WIj0aKUkuQm23vcu7wc0xRW4fK0QlO2ohLkkzQmEWIj0WIj0dLlI/Uni3vcoxR3gwRG0eKkMmOmZUYHkVIjwXJEEoOVz///8uQWdvfZpEVnxSYoQ1QVtPXHn////BNstiAAAA2nRSTlMAv7+/v7+/v78CCb+/v78Sxr+/B7/GxsbGNhvGBdW/v8YLxsTGDi7OvypNiRvGxnVDxno3xNeHya/Bt8spxlO+yg7NwcUOdcLEiM7XeoevwcC/iV/FUhvW0MKtKcdpFnVEiNDSw7/NO8dgcG+ywb9XX1LAxHGJfsU8einB0MyTqMPDPG0OyomTzVedxGvFwMzMDkKTxsKo0SioMGt1h3PKqBwQe5M8zcSvonUkssTAyl9Ey6g/ssYbwdFtetOoKCqdbcTKZRuHzn8owJ1SvDR615QUyk11YC5DGS3quJMAAAGXSURBVCjPY2AgHthISkrq4JIstA6XlZU1tTfCosKxskrV2E1BQcHSxMu7GV22xc9KmEEmyDC/x5CXty/CDFV2ooVDLJCKi1ecMdOdlZXVaS6KtM/8BQtBND/DYnMREFhWgCQbpm5rxwlm+aqvEwIBZxdXhHRiiIcnmLE9jRsKMjIR0v4BGh0MDMEHQw/3CkJBZBRcNjqGmXnKmYTpSckpzDCQdxkunS7KxCSalS2ak8sEB3KicOmluiwsRcUlpWXlLAigC5euEGBkZKyuqa2rbxAQEGhkBAMBuHSTNB8YtLa163fqd0l3gzjScGkuCXkI6J/Ar8gvNWmyhMSpqdMQHtNW5gEDZW0QT3jW7DlKSvMQ0gZiqWAgZgDmyizSFBPTREhzLdELBIHlK6ACK/VWySAF+uo1a9lBYP0GMHfjps38yDHGuWXrNg4g2LFzF5C3e8/efagRLrz/gMohNjY2lSMMR48dP3GSEy25cEppnRYXFz977vyFi1qX0GVB7pNSu3L12vUbaje5sCdVTi5+VWEuTgbiAQCaiWkRF8A8LAAAAABJRU5ErkJggg==" />
+					</span>
+				</div>
+	  </header>
+		<div id="composer">
+			<button>
+				<img width="14" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQBAMAAADUulMJAAAAMFBMVEX///8AAAAAAAD55bH22p2afEzNvZ+0oYijjWXq27LSwJXLuI3988uul2/HsofCrIB1tPJ5AAAAA3RSTlMAEg38M8iwAAAAS0lEQVQIW2NggIIOCGBoNgYBCzjd4gICHgw9Z0DgBII+Xl5ejsw/lpYGkz+16i2Yf3pmAJh/eioDmD4fwMAQCgSxQPuYBAUFhRgYANE6NYHjcxLMAAAAAElFTkSuQmCC" />
+				Status
+			</button>
+			<button>
+				<img width="16" height="16" title="" alt="" src="data:image/gif;base64,R0lGODlhEAAQAMQbAOq+h4ZVGPPz87RyIOOpYZReG5FcGqJnHeOoXqpsHum9hbZ0IdqOLtqNLaBmHadqHtWHJuOqY8J8I755IpOTk35QF52sy+/v7+vCj////319ff///wAAAAAAAAAAAAAAACH5BAEAABsALAAAAAAQABAAAAVu4CaOZLlRWqquGjVqVybP86W9maXve3aLmhyKxULlYLSkLWgJYp6EhIPx9DGdz0WlEgAArMfMU7HdEr6p8BPz2Ba81hgWgwhUJtWWSrw+VBp5Ahc2GREQAwZbAQMSPi8xSTU/J0RFI4KDmZoXAiEAOw==" />
+				Photo
+			</button>
+			<button>
+				<img width="15" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAABgElEQVR42o2PS0sCYRSG+w0FrvoDrVokLYo2Qea2ogtRTZkoFLgQCpSxEIRatDAKatEiiqhNi7CEChddmFLEIIuwkeyeRtKFki7qad6PHNJs6oOHw3nfeeabKSAimeaSSqCSsEkEJQgT+1ee9XyurOou07iG6g20YHLQKj/GJnbk6JVkGx6ElAty9EpyMHPjmbBH74lXTPkL0CvJ8k0QcTAzGXolWXBbnHlvRo5eSZ6YNvJ5/xk5eiW5WK+uTeeTkaNXksHylN6SJWJHjv4vubCjtPpuqW+EiZjYkf+Q+Z4GMCpBwNpbR8aWGrJqWiGz2aQrp0a7+jtOCSYXOcxtdBX20fNjjOK3F3QU8JCdM9BkZz/xnI5CkRU6ja7T9vEio324Ci8ogszNjg8y+eMtQfEbkS5FL4n7G6Sv0LIZiwr09LIrywMzXZA5yC5hbZ7JuSedSlG+4w9tQnZBfogcbkH+lesTHyWTfjoP71BAdJPnYA7yPWSvBP0Xk1kLEfg+Ae4OdRXJl/fiAAAAAElFTkSuQmCC" />
+				Check In
+			</button>
+		</div>
+	  <div class="body">
+			<div class="story">
+				<img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/371789_100000258553986_1176623431_q.jpg" />
+				<div class="contents">
+					<p>
+						<a href="" class="name">Jane Doe</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+					<div class="actions">
+						15 min ago
+					</div>
+					<div class="meta">
+						<span>
+							<img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+							1 person
+						</span>
+						<span>
+							<img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+							1 comment
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="story">
+				<img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/260726_627089482_1445790862_q.jpg" />
+				<div class="contents">
+					<p>
+						<a href="" class="name">Henry Brown</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.
+					</p>
+					<div class="actions">
+						45 min ago near New York
+					</div>
+					<div class="meta">
+						<span>
+							<img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+							1 person
+						</span>
+						<span>
+							<img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+							2 comment
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="story">
+				<img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/370588_1492902592_1826064075_q.jpg" />
+				<div class="contents">
+					<p>
+						<a href="" class="name">Jill Rosenthal</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit lorem ipsum dolor sit amet.
+					</p>
+					<div class="actions">
+						1 hour ago near New York
+					</div>
+					<div class="meta">
+						<span>
+							<img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+							5 person
+						</span>
+						<span>
+							<img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+							1 comment
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="story">
+				<img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/370588_1492902592_1826064075_q.jpg" />
+				<div class="contents">
+					<p>
+						<a href="" class="name">Jill Rosenthal</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit lorem ipsum dolor sit amet.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+					<div class="actions">
+						2 hours ago
+					</div>
+				</div>
+			</div>
+			
+			<div class="story">
+				<img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/186424_501293344_209683318_q.jpg" />
+				<div class="contents">
+					<p>
+						<a href="" class="name">Jason Eng</a><br>
+						Consectetur adipiscing elit lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+					<div class="actions">
+						2 hours ago
+					</div>
+				</div>
+			</div>
+			
+			<div class="story">
+				<img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/369418_2405900_2104464960_q.jpg" />
+				<div class="contents">
+					<p>
+						<a href="" class="name">Paul White</a><br>
+						Consectetur adipiscing elit lorem ipsum dolor sit amet. consectetur adipiscing elit!
+					</p>
+					<div class="actions">
+						2 hours ago
+					</div>
+					<div class="meta">
+						<span>
+							<img width="13" height="15" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAmElEQVQokWP4//8/A6mYILCOnPEfiG8SVonQsBlo8n+riGl3gFxBYjWB9IBs+k+UJqDChrLu7ciaRIi2BaYJCc8EuxtN8D+yBnQAthVETFx0FIzxKcbQBHI7CA8BTTAM4h85+wBDk1X41AsYoSevH6AGwkbejdEWIRMWIsuBNCibRunAooUPGnkwzATFbEDMgyYnQHIKB2EA0kuS9wIszA0AAAAASUVORK5CYII=" />
+							10 person
+						</span>
+						<span>
+							<img width="12" height="16" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAlUlEQVQoz2P4//8/AymYgfYarKOmbALi/1ZAbI2ErdDYUP4mkIb/D56+///k5Ue8GKQGpJYBpPPstWdEYbAGa1pqsCLPhmgSNZDsaUO/uk1A/N/Qt/a/ARAb+tZhuBskB1YDVMsABEJALI6MQZIoHkXIgdQyMNy4/xoFgyRBtsE0IInjBWBN1hAbEABvQmNgEABhZDEAGJb95V+ytHQAAAAASUVORK5CYII=" />
+							2 comment
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="story">
+				<img width="40" height="40" title="" alt="" src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc4/186424_501293344_209683318_q.jpg" />
+				<div class="contents">
+					<p>
+						<a href="" class="name">Jason Eng</a><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit!!!
+					</p>
+					<div class="actions">
+						2 hours ago
+					</div>
+				</div>
+			</div>
+			
+			
+	  </div>
+	</div>
+	
+</div>
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+
+<script>
+(function() {
+	
+	var body = document.body,
+			trigger = document.querySelectorAll('#page .trigger')[0],
+			closeMask = document.getElementById('close-mask');
+
+	trigger.addEventListener('click', function() {
+		if (hasClass(body, 'menu-open')) {
+			hideMenu();
+		} else {
+	 		showMenu();
+		}	
+	});
+
+	closeMask.addEventListener('click', function(e) {
+		e.preventDefault();
+		hideMenu();
+	});
+
+	setTimeout(function() { window.scrollTo(0, 0); }, 100);
+
+	function showMenu() {
+		body.setAttribute('class', 'menu-open');
+		closeMask.style.display = 'block';	
+	}
+
+	function hideMenu() {
+		window.scrollTo(0, 0);
+		body.removeAttribute('class');
+		closeMask.style.display = 'none';
+	}
+
+	function hasClass(el, selector) {
+		  var className = " " + selector + " ";				
+	    return (el.nodeType === 1 && (" " + el.className + " ").replace(/[\n\t\r]/g, " ").indexOf(className) > -1);
+	}
+	
+})();
+</script>
+
+</body>
+</html>
