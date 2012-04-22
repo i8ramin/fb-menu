@@ -11,9 +11,11 @@ The goals of this small project are:
 
 ## Notes
 
-The HTML and CSS are a work in progress and in no way production read. My initial goal was simply to get the page to resemble the current Facebook web site.
+The HTML and CSS are a work in progress and in no way production ready.
+My initial goal was simply to get the page to resemble the current Facebook web site.
 
-I have inline most of the images using data-uri's so that I could work on this offline. All images/icons used here belong to Facebook and I am simply using them to educational purposes.
+I have inlined most of the images using data-uri's so that I could work on this offline.
+All images/icons used belong to Facebook and I am simply using them for educational purposes.
 
 ## Demo
 
