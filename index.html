@@ -265,24 +265,26 @@
 
     if (('ontouchend' in window)) {
         (function() {
-            var x, moved;
+            var x, y;
 
             body.addEventListener('touchstart', function(event) {
-                event.preventDefault();
                 x = event.changedTouches[0].pageX;
+                y = event.changedTouches[0].pageY;
             });
 
             body.addEventListener('touchmove', function(event) {
                 event.preventDefault();
-                var distance   = x - event.changedTouches[0].pageX
-                  , movedLeft  = 20 < distance
-                  , movedRight = -20 > distance;
+                var distanceX  = x - event.changedTouches[0].pageX
+                  , distanceY  = y - event.changedTouches[0].pageY
+                  , movedLeft  = 15 < distanceX
+                  , movedRight = -15 > distanceX
+                  , movedVert  = (distanceY > 15 || distanceY < -15);
 
-                if (movedLeft) {
+                if (movedLeft && !movedVert) {
                     return hideMenu();
                 }
 
-                if (movedRight) {
+                if (movedRight && !movedVert) {
                     return showMenu();
                 }
             });
