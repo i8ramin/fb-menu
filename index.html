@@ -236,28 +236,26 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
       </div>
     </div>
-    
+
 </div>
 
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
 
 <script>
 (function() {
-    
-    var body = document.body,
-            trigger = document.querySelectorAll('#page .trigger')[0],
-            closeMask = document.getElementById('close-mask');
+    var body      = document.body
+      , trigger   = document.querySelectorAll('#page .trigger')[0]
+      , closeMask = document.getElementById('close-mask');
 
     trigger.addEventListener('click', function() {
         if (hasClass(body, 'menu-open')) {
             hideMenu();
         } else {
             showMenu();
-        }   
+        }
     });
 
     closeMask.addEventListener('click', function(e) {
@@ -265,10 +263,38 @@
         hideMenu();
     });
 
+    if (('ontouchend' in window)) {
+        (function() {
+            var x, y;
+
+            body.addEventListener('touchstart', function(event) {
+                x = event.changedTouches[0].pageX;
+                y = event.changedTouches[0].pageY;
+            });
+
+            body.addEventListener('touchmove', function(event) {
+                var distanceX  = x - event.changedTouches[0].pageX
+                  , distanceY  = y - event.changedTouches[0].pageY
+                  , movedLeft  = 15 < distanceX
+                  , movedRight = -15 > distanceX
+                  , movedVert  = (distanceY > 15 || distanceY < -15);
+
+                if (movedLeft && !movedVert) {
+                    event.preventDefault();
+                    return hideMenu();
+                }
+
+                if (movedRight && !movedVert) {
+                    event.preventDefault();
+                    return showMenu();
+                }
+            });
+        }());
+    }
+
     setTimeout(function() { window.scrollTo(0, 0); }, 100);
 
     function showMenu() {
-        // window.scrollTo(0, 0);
         body.setAttribute('class', 'menu-open');
         closeMask.style.display = 'block';  
     }
@@ -280,10 +306,9 @@
     }
 
     function hasClass(el, selector) {
-          var className = " " + selector + " ";             
+        var className = " " + selector + " ";
         return (el.nodeType === 1 && (" " + el.className + " ").replace(/[\n\t\r]/g, " ").indexOf(className) > -1);
     }
-    
 })();
 </script>
 
