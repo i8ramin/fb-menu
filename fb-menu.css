@@ -17,10 +17,9 @@ body {
     margin: 0; font-size: 13px; line-height: 1.231;
 }
 
-body.menu-open #page {
-    position: fixed;
-    -webkit-transform: translate3d(260px, 0, 0);
-    -moz-transform: translate3d(260px, 0, 0);
+
+#viewport {
+    background-color: #32394A;
 }
 
 #close-mask {
@@ -33,16 +32,29 @@ body.menu-open #page {
     z-index: 999;
     background-color: transparent;
 }
+body.menu-open #close-mask {
+    display: block;
+}
 
 #page {
     position: relative;
     z-index: 2;
-    height: 1000px;
     min-width: 320px;
     background-color: #fff;
-    -webkit-transition: -webkit-transform 200ms ease-in;
-    -moz-transition: -moz-transform 200ms ease-in;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transform: translate3d(0, 0, 0);
 }
+
+body.menu-opening #page,
+body.menu-closing #page {
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in;
+}
+body.menu-moving #page {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+}
+
     #page > header {
         height: 43px;
         line-height: 43px;
@@ -56,6 +68,7 @@ body.menu-open #page {
     }
     #page > header .trigger {
         position: absolute;
+        z-index: 2;
         top: 11px;
         left: 14px;
         display: block;
@@ -167,11 +180,12 @@ body.menu-open #page {
 }
 
 #menu {
-    position: absolute;
+    position: fixed;
     width: 260px;
     top: 0;
     left: 0;
-    background: #32394A;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
     #menu > header {
         padding: 0 8px;
@@ -211,13 +225,6 @@ body.menu-open #page {
         font-weight: normal;
     }
 
-    #menu .scrollable {
-        position: absolute;
-        width: 100%;
-        top: 43px;
-/*      overflow-y: scroll;*/
-/*      -webkit-overflow-scrolling: touch;*/
-    }
     #menu .separator {
         background: #434B5C;
         background: -webkit-gradient( linear, left top, left bottom, from(#434B5C), to(#394152) );
