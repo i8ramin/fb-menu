@@ -19,11 +19,11 @@ All images/icons used belong to Facebook and I am simply using them for educatio
 
 You can watch a quick Youtube video I put together of how this works in the iOS simulator.
 
-http://www.youtube.com/watch?v=uCFY0DF2UZo
+http://www.youtube.com/watch?v=uCFY0DF2UZo (a little outdated)
 
-You may also load this URL directly on your iPod/iPhone device or simulator:
+You may also load this URL directly on your *iPod/iPhone* device or the *iOS Simulator*:
 
-http://i8ramin.github.com/fb-menu/
+http://getintothis.com/fb-menu/
 
 ## Recent Changes
 
