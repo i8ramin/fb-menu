@@ -184,9 +184,13 @@ body.menu-moving #page {
     width: 260px;
     top: 0;
     left: 0;
+    
+}
+body.menu-open #menu {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+
     #menu > header {
         padding: 0 8px;
         width: 260px;
