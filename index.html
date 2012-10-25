@@ -458,6 +458,7 @@
             if (!movedVert) {
 
                 if (!menuOpen && movedRight || menuOpen && movedLeft) {
+                    event.preventDefault();
                     addClass(body, 'menu-moving');
                     page.style.webkitTransform = 'translate3d(' + (distanceX + m41) + 'px, 0 , 0)';    
                 }
